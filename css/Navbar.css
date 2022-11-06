@@ -1,0 +1,137 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    z-index: 1;
+    position: fixed;
+    height: 115px;
+    width: 100%;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25);
+    background-color: #ffff
+}
+
+
+.nav-link{
+    font-size: 18px;
+    color:black;
+    border-radius: 7px;
+}
+.nav-item{
+    padding: 0 60px ;
+}
+#Carrito:hover{
+    background-color: #ffffff;
+    color: black;
+}
+.nav-menu-link:hover{
+    background-color: #5293F0;
+    color: white;
+    transition: 0.5s;
+}
+.ItemCantidad{
+    width: 40px;
+}
+.vacio{
+    padding: 10px;
+    background-color: gray;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+}
+.sub-menu #Carrito{
+    text-align: center;
+    display: none;
+}
+#Carrito h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.sub-menu:hover #Carrito{
+    display: block;
+    background-color: white;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.55);
+    position: absolute;
+    width: 510px;
+    height: max-content;
+    right: 1%;
+    z-index: 1;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#Carrito2{
+    text-align: center;
+}
+.lista-carrito{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    width: 500px;
+    min-width: 400px;
+}
+.lista-carrito thead tr{
+    text-align: left;
+}
+.lista-carrito tbody tr{
+    text-align: left;
+}
+.lista-carrito th,
+.lista-carrito td{
+    padding: 5px 10px;
+    max-width: 500px;
+    width: 300px;
+}
+
+#Carrito::-webkit-scrollbar{
+    width: 10px; 
+}
+#Carrito::-webkit-scrollbar-thumb{
+    background-color: lightgray;
+}
+#CarritoVacio{
+    color: #95B3DE;
+}
+#CarritoVacio h5{
+    color: #95B3DE;
+    font-size: 24px;
+    margin: 30px;
+    position: relative;
+    left: 10px;
+}
+#CotizacionCarro{
+    display: none;
+}
+#CarritoVacioImagen{
+    height: 200px;
+}
+.form-group{
+    padding-bottom: 20px;
+}
+.btn-ini{
+    background-color: #364cb9;
+    color: white;
+}
+@media screen and (max-width: 1024px) {
+    .nav-item{
+        padding: 0 30px ;
+    }
+}
+@media screen and (max-width: 425px) {
+.lista-carrito th,
+.lista-carrito td{
+    padding: 0px 2px;
+    width: 60px;
+    font-size: 12px;
+}
+#CotizacionCarro{
+    width: 400px;
+}
+#FormularioCotizacion h3{
+    font-size: 16px;
+}
+}
+

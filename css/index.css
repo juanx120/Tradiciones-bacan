@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: lightgray;
+}
+h1{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-size: 52px;
+    color: #000F55;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+h4{
+    font-size: 24px;
+    color: black;;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+h5{
+    font-size: 18px;
+    color: black;
+}
+
+#ReviveLaTradicion{
+    height: 1024px;
+    text-align: left;
+    background-color: #90B4F0; 
+}
+#ReviveLaTradicionT{
+    position: absolute;
+    font-size: 18px;
+    top: 35%;
+    left: 10%;
+    width: 620px;
+    color: #ffffff;
+}
+#ReviveLaTradicionT p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#boton{
+    border:  none;
+    background-color: #F8F496;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 20px;
+    height: 84px;
+    width: 286px;
+    border-radius: 34px;
+}
+#Portadaimg{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+#ProductosDestacados{
+    height: 1024px;
+    background-image: url(/images/Fondo_blando_puntos.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    text-align: center;
+}
+#ProductosDestacadosT1{
+    position: relative;
+    top: 15%;
+    text-align: center;
+}
+#ProductosDestacadosT{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    top: 22%;
+}
+.ProductoD{
+    background-color: #F2F2F2;
+    border-radius: 23px;
+    margin-left: 20px;
+    width: 350px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.ProductoT{
+    width: 260px;
+    margin: auto;
+}
+.Productoimg{
+    width: 350px;
+}
+#PreguntasFrecuentes{
+    background-color: #F8F496;
+    height: 1024px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 18px;
+}
+#PreguntasFrecuentesT{
+    width: 620px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    position: relative;
+}
+#Preguntasimg{
+    position: relative;
+    width: 800px;
+    height: max-content;
+    margin-top: 10%;
+}
+#NuestrosClientes{
+    background-color: #ffffff;
+    height: 850px;
+    font-size: 18px;
+}
+#NuestrosClientesTitulo{
+    position: relative;
+    text-align: center;
+    color: #000F55;
+    margin-top: 10%;
+    margin-bottom: 80px;
+}
+.NuestrosClientesT{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.Cliente{
+    width: 400px;
+    margin-left: 80px;
+    color: #828282;
+    position: relative;
+    text-align: left;
+}
+.Clientes{
+    display: flex;
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 1600px){
+    #Portadaimg{
+        position: absolute;
+        top: 110px;
+        right: 0%;
+        width: 40%;
+    }
+    #ReviveLaTradicionT{
+        position: absolute;
+        font-size: 18px;
+        top: 35%;
+        left: 10%;
+        width: 45%;
+        color: #ffffff;
+    }
+    #Preguntasimg{
+        width: 50%;
+    }
+    #ProductosDestacados{
+        height: max-content;
+        background-repeat: repeat-y;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+@media screen and (max-width: 1500px){
+    #Portadaimg{
+        position: absolute;
+        top: 110px;
+        right: 0%;
+        width: 500px;
+    }
+    #ProductosDestacados{
+        height: auto;
+        background-size: cover;
+    }
+    #ProductosDestacadosT1{
+        position: relative;
+        top: 15%;
+        text-align: center;
+    }
+    #ProductosDestacadosT{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
+        position: relative;
+        margin-left: 15%;
+        margin-right: 15%;
+        top: 22%;
+    }
+    .ProductoD{
+        background-color: #F2F2F2;
+        border-radius: 23px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .ProductoT{
+        width: 80%;
+        margin: auto;
+    }
+    .Productoimg{
+        width: 100%;
+    }
+    #PreguntasFrecuentes{
+        background-color: #F8F496;
+        height: auto;
+        text-align: left;
+        font-size: 18px;
+    }
+    #PreguntasFrecuentesT{
+        width: 500px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        position: relative;
+    }
+    #Preguntasimg{
+        position: relative;
+        margin-top: 10%;
+        width: 45%;
+    }
+    #NuestrosClientes{
+        height: max-content;
+    }
+}
+@media screen and  (max-width: 1300px){
+    #ProductosDestacados{
+        height: max-content;
+        background-repeat: repeat-y;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    #PreguntasFrecuentes{
+        height: max-content;
+    }
+    #NuestrosClientesTitulo{
+        position: relative;
+        text-align: center;
+        color: #000F55;
+    }
+    .Cliente{
+        width: 300px;
+        color: #828282;
+        position: relative;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 1100px){
+    #Portadaimg{
+        width: 400px;
+    }
+    #PreguntasFrecuentes{
+        background-color: #F8F496;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .ImgCliente{
+        width: 120px;
+        height: 120px;
+    }
+    #ProductosDestacados{
+        background-size: cover;
+        background-repeat: repeat;
+    }
+    #NuestrosClientesT{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 768px){
+    #ReviveLaTradicion{
+        height: 1100px;
+        text-align: left;
+        background-color: #90B4F0; 
+    }
+    #Portadaimg{
+        width: 400px;
+    }
+    #ReviveLaTradicionT{
+        top: 400px;
+        left: 100px;
+    }
+    #ProductosDestacados{
+        height: auto;
+    }
+    .ProductoD{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #ReviveLaTradicionT{
+        top: 500px;
+        left: 100px;
+    }
+    #ReviveLaTradicion{
+        height: 1300px;
+    }
+    .Clientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/css/Contacto.css" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/Navbar.css" />
+  <link rel="stylesheet" href="/css/Validacion.css" />
+  <link rel="stylesheet" href="/css/Boton_whatsapp.css" />
+
+  <!--Fuentes de texto-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+
+
+  <!--Boton de whatsapp-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=+573158503531" class="float" target="-blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg" style="background-color: #ffff">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/images/logo_bacan.png" alt="" width="170" height="80"
+              class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="/html/Sobre_Nosotros.html">Sobre
+                  Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" aria-current="page"
+                  href="/html/Tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="/html/Contacto.html"><b>Contacto</b></a>
+              </li>
+              <li class="sub-menu nav-item">
+                <a class="nav-menu-link nav-link" href="javascript:void(0);">
+                  <img src="/images/216477_shopping_cart_icon.png" alt="" width="40"
+                    height="auto" />
+                </a>
+                <div id="Carrito">
+                  <h4>Carrito de compras</h4>
+                  <div id="Carrito2">
+                    <div id='CarritoVacio'> 
+                      <img id="CarritoVacioImagen"src="/images/Carrito_Vacio.png">
+                      <h5><b>Carrito Vacio</b></h5>
+                    </div>
+                  </div>
+                  <p class="total-carrito">Total: </p>
+                  <a href="/html/CheckOut.html" id="CheckOut">Check-Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="CotizacionCarro">
+    <p class="total-carrito-cotizacion">Total: </p>
+  </div>
+  <div class="img">
+    <form action="" class="container-formulario" id="formulario">
+      <div class="subcontenedor-form">
+        <div class="title-form">
+          <h3>¿Tienes preguntas? llena este formulario</h3>
+        </div>
+        <div class="linea"></div>
+        <!--nombre de Nombre-->
+        <div class="rows-forms" id="grupo__txtnombre">
+          <div class="container-P">
+            <p>Nombre </p>
+          </div>
+          <div class="container-imput">
+            <input type="text" class="formulario_input" name="txtnombre" id="txtnombre">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros,
+              letras y guion bajo.</p>
+          </div>
+
+        </div>
+        <!--celular de Celular-->
+        <div class="rows-forms">
+          <div class="container-P">
+            <p>Celular* </p>
+          </div>
+          <div class="container-imput" id="grupo__txtcelular">
+            <input type="number" class="formulario_input" name="txtcelular" id="txtcelular" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            <p class="formulario__input-error">ingresa un numero valido</p>
+          </div>
+        </div>
+        <!--correo de Correo-->
+        <div class="rows-forms" id="grupo__txtcorreo">
+          <div class="container-P">
+            <p>Correo* </p>
+          </div>
+          <div class="container-imput">
+            <input type="email" class="formulario_input" name="txtcorreo" id="txtcorreo" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion
+              bajo.</p>
+          </div>
+        </div>
+        <!--asunto de Asunto-->
+        <div class="rows-forms">
+          <div class="container-P">
+            <p>Asunto* </p>
+          </div>
+          <div class="container-imput">
+            <input type="text" id="txtasunto" required>
+          </div>
+        </div>
+        <!--descripcion de Descripcion-->
+        <div class="rows-forms">
+          <div class="container-P">
+            <p>Descripción* </p>
+          </div>
+          <div class="container-Text-area">
+            <textarea class="form-control" id="txtdescripcion" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="contenedor-btn-enviar rows-forms">
+          <button type="submit" class="btn btn-primary boton-enviar" id="btnSaveEnviar">Enviar</button>
+        </div>
+        <div>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envio con exito</p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <footer class="text-white" style="background-color: #000f55">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xl-4 text-reset align-items-center">
+          <p class="Tfooter"><b>Comunicate con Nosotros</b></p>
+          <hr color="white" size="6" width="100%" />
+          <ul class="list-unstyled">
+            <li>
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              (+57) (1) 757 1146
+            </li>
+            <li>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              (+57) 315 8503 531
+            </li>
+            <li>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              (+57) 310 6873 657
+            </li>
+            <li>
+              <ion-icon name="mail-outline"></ion-icon>
+              info@tradicionesbacan.com
+            </li><br>
+            <!--Gestionar TradicionesBacan-->
+            <li class="administar">Eres emplado Bacan?<br>
+              <a class="Nconexion">No hay conexion con la base de datos</a>
+              <a class="ingresar logged-out" data-bs-toggle="modal" data-bs-target="#SigninModal"
+                style="display: none">Ingresar</a>
+              <a class="gestion logged-in" href="/html/Gestionar.html"
+                style="display:none">Gestionar</a><br>
+              <a class="salir logged-in"  style="display:none">salir</a>
+            </li>
+        </div>
+        <div class="col-md-6 col-xl-4 text-reset align-items-center">
+          <p class="Tfooter"><b>¿Donde encontrarnos?</b></p>
+          <hr color="white" size="6" width="100%" />
+          <ul class="list-unstyled">
+            <li>
+              <ion-icon name="location-outline"></ion-icon>
+              <b>Carrera 62 # 168a- 54</b>
+              <p id="peque">OFI 101 Int 6, Bogotá – Colombia</p>
+            </li>
+            <li class="maps">
+              <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15904.402551170488!2d-74.0598461!3d4.7525419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ef56ca55c40d930!2sTradiciones%20SAS!5e0!3m2!1ses!2sco!4v1631421226541!5m2!1ses!2sco"
+                width="300" height="250" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xl-4 text-reset align-items-center">
+          <p class="Tfooter"><b>¡Siguenos en nuestras redes!</b></p>
+          <hr color="white" size="6" width="100%" />
+          <ul class="list-unstyled">
+            <li>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <a class="link_redes" href="https://www.instagram.com/tradicionesbacan/"
+                target="_blank">@tradicionesbacan</a>
+            </li>
+            <li>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <a class="link_redes" href="https://www.facebook.com/tradicionesbacan/" target="_blank">Tradiciones
+                Bacan</a>
+            </li>
+            <li>
+              <ion-icon name="logo-pinterest"></ion-icon>
+              <a class="link_redes" href="https://co.pinterest.com/abermudez8652/_created/" target="_blank">Tradiciones
+                Bacan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Iniciar sesion -->
+  <div class="modal fade" id="SigninModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><a>Ingresar con tu cuenta Bacan</a></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="login-form">
+            <div class="form-group">
+              <input type="email" id="loginemail" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" id="loginpassword" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-block btn-ini">Iniciar sesion</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"></script>
+
+  <!-- FIREBASE SCRIPTS-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+  <!-- Iconos -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/Carrito.js"></script>
+  <script src="/js/sesion.js"></script>
+  <script src="/js/datoslogic.js"></script>
+  <script src="/js/validacionform/validacion.js"></script>
+
+</body>
+
+</html>

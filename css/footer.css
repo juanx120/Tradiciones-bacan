@@ -1,0 +1,52 @@
+.row{
+    justify-content: center;
+}
+.Tfooter{
+    font-size: 24px;
+    padding: 40px 150px 0 0;
+    text-align: left; 
+    align-items: left;
+}
+footer{
+    bottom: 0px;
+}
+.administar{
+    text-align:left;
+    padding-right: 100px;
+}
+
+.administar a{
+    color: white;
+    cursor: pointer;
+}
+#peque{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 21px ;
+}
+.maps{
+    text-align: center; 
+}
+.link_redes{
+    color: white;
+    text-decoration: none;
+}
+.link_redes:hover{
+    color: white;
+}
+@media screen and (max-width: 1180px) {
+    .Tfooter{
+        padding: 40px 0 0 0;
+        text-align: center; 
+    }
+    .administar{
+        padding: 0 0 0 0;
+        text-align:center;
+    }
+    .row{
+        text-align: center; 
+    }
+    #peque{
+        text-align: center;
+    }
+}

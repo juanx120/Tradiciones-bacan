@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/NavbarG.css" />
+    <link rel="stylesheet" href="/css/TablaCoti.css" />
+
+    <!--Fuentes de texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+
+
+    <title>Gestion Cotizaciónes Bacan</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="administar">
+                <a class="Nconexion">No hay conexion con la base de datos</a>
+                <a class="ingresar logged-out" data-bs-toggle="modal" data-bs-target="#SigninModal"
+                    style="display:none">Ingresar</a>
+                <a class="gestion logged-in" href="/html/Gestionar.html"
+                    style="display:none">Gestionar</a>
+                <a class="salir logged-in" style="display:none">salir</a>
+            </div>
+            <nav class="navbar navbar-expand-lg" style="background-color: #ffff">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/images/logo_bacan.png" alt="" width="170" height="80"
+                            class="d-inline-block align-text-top" />
+                    </a>
+                    <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-menu-link nav-link" aria-current="page" href="/html/tabla-productos.html">Modificar
+                                        productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-menu-link nav-link" href="/html/tabla-consultas.html">Consultas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-menu-link nav-link" href="/html/tabla-cotisacion.html"><b>Cotizaciónes</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="Nuser">
+            <h2>No ha iniciado sesion</h2>
+        </div>
+    </div>
+
+    <!--Contenido de las comiciones-->
+    <div class="contanedor-datos container" id="divcotiza" >
+        <div class="cabeza-tabla">
+            <input class="buscar-control" type="text" name="Codigo" id="Codigo" placeholder="Busqueda">
+            <div>
+                <a type="button" class="btn btn-primary boton-enviar" id="btnvolver"
+                    href="/html/Gestionar.html">Volver</a>
+            </div>
+            <!-- Espacios para escritura de texto -->
+        </div>
+        <table class="ContenidoTabla">
+            <thead id="Ttabla">
+                <tr>
+                    <th id="idT">id</th>
+                    <th id="nombreT">Nombre</th>
+                    <th id="apellidoT">Apellido</th>
+                    <th id="correoT">Correo</th>
+                    <th id="telefonoT">Telefono</th>
+                    <th id="productosT">Productos/cantidad</th>
+                    <th id="totalT">Total</th>
+                    <th id="fechaT">Fecha</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody id="datosTabla">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <!-- Modal Iniciar sesion -->
+    <div class="modal fade" id="SigninModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><a>Ingresar con tu cuenta Bacan</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="form-group">
+                            <input type="email" id="loginemail" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="loginpassword" class="form-control" placeholder="Contraseña"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-ini">Iniciar sesion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Confirmacion -->
+    <div class="modal fade" id="Confirmacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" id="modalP">
+            <div class="modal-content" id="Modalcon">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TituloConfirm"><a>H</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="BodyConfirm">
+                    <button type="button" class="btn-confirmar-actualizacion">Confirmar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- scripts bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+        <!-- Iconos -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- FIREBASE SCRIPTS-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+
+        <!-- CUSTOM CODE-->
+        <script src="/js/config.js"></script>
+        <script src="/js/sesion.js"></script>
+        <script src="/js/tabla-cotiza.js"></script>
+
+
+</body>
+
+</html>

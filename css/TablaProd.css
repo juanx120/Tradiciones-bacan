@@ -1,0 +1,283 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-image: url(/images/FondoAdmin.jpg);
+}
+.Nuser{
+  padding: 170px 0 50px;
+  font-size: 64px;
+  text-align: center;
+}
+.TTA{
+  padding: 0px 0px 10px 0px;
+}
+
+.ContenidoTabla{
+  margin: 25px 10px;
+  font-size: 16px;
+  width: 99%;
+  min-width: 400px;
+}
+
+.ContenidoTabla thead tr{
+  background-color: #90B4F0;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.ContenidoTabla th,
+.ContenidoTabla td {
+    padding: 12px 15px;
+}
+.ContenidoTabla tbody tr{
+  border-bottom: 1px solid #dddddd;
+  background-color: white;
+  text-align:left;
+}
+.cabeza-tabla{
+  margin: 10px;
+  display: flex;
+  gap:25px;
+  align-items: center;
+}
+
+.tabla-prod{
+  margin: auto;
+}
+
+.buscar-control{
+  width: 200px;
+  height: 30px;
+  margin-left: auto;
+}
+
+#Ttabla{
+  background-color: white;
+padding-left: 50px;
+padding-right: 50px;
+font-size: 18px;
+}
+
+#idT{
+  text-align: left;
+}
+
+#nombreT{
+  text-align: left;
+}
+
+#precioT{
+  text-align: left;
+}
+
+#accionesT{
+  text-align: center;
+}
+
+#accionT{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btnEditar{
+  width: 20%;
+  height: max-content;
+  display: flex;
+  text-align: right;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #0d6efd;
+  color: white;
+  border-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.btnEditar:hover{
+  background-color: #F8F496;
+  color: black;
+}
+
+.btnBorrar{
+  width: 20%;
+  height: max-content;
+  text-align: left;
+  display: flex;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #0d6efd;
+  color: white;
+  border-style: none;
+  align-items: center;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.btnBorrar:hover{
+  background-color: #E1071A;
+}
+.boton-enviar{
+  width: 100%;
+  background-color: #0d6efd;
+  border-style: none;
+}
+#btnNuevo{
+  width: 100%;
+  background-color: #0a8328;
+  border-style: none;
+}
+
+#btnNuevo:hover{
+  background-color:rgb(5, 46, 5);
+}
+
+.contenedor-confi {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  justify-content: center;
+}
+.ModiProductos {
+  background-color: #fff;
+  display: flex;
+  padding-top: 25px;
+}
+.previmagen {
+    
+    max-width: 400px;
+    max-height: 600px;
+    margin: 10px;
+}
+
+#btnimagen {
+  width: 400px;
+  height: auto;
+  max-height: 500px;
+}
+
+.subcontenedor-izq {
+  width: 80%;
+  display: flex;
+}
+
+.form-descripcion {
+  width: 100%;
+}
+.rows-forms {
+  display: flex;
+
+}
+.container-imput {
+  width: 50%;
+  margin-top: 10px;
+}
+.container-Text-area {
+  width: 60%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.container-P {
+  width: 30%;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.botones {
+  display: flex;
+  padding-left: 20%;
+  gap: 100px;
+  margin: auto;
+}
+
+.boton-azul {
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.boton-gris {
+  height: 100%;
+  border-radius: 2rem;
+  background: gray;
+  border-color: gray;
+}
+
+input {
+  width: 120%;
+  margin-left: 10px;
+}
+
+#confborrar{
+  border-radius: 3px;
+  border: 1px solid;
+  width: 3%;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+.form-control1 {
+  height: 500px;
+  width: 341px;
+}
+
+#formulario__mensaje-exito{
+    color: #119200;
+
+}
+
+input:invalid {
+  border: 1px solid #fd6969;
+}
+textarea:invalid{
+  border: 1px solid #fd6969;
+}
+#Modalcon{
+  width: 120%;
+  background-color: rgb(243, 243, 243);
+}
+#Confirmacion {
+  text-align: center;
+}
+
+#modalP {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.btn-confirmar-actualizacion{
+  background-color: #0d6efd;
+  margin: 15px 0px;
+  border-radius: 15px;
+  padding: 7px 10px;
+  border-style: none;
+  color: white;
+}
+.btn-conf-borrar{
+  background-color: #E1071A;
+  margin: 15px 0px;
+  border-radius: 15px;
+  padding: 7px 10px;
+  border-style: none;
+  color: white;
+}
+.btn-conf-borrar:disabled{
+  background-color: rgba(253, 142, 142, 0.514);
+}
+@media screen and (min-width: 768px) { 
+  #Confirmacion:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}

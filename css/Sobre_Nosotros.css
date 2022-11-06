@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: lightgray;
+}
+#Nempresa{
+    height: 1024px;
+    text-align: center;
+    font-size: 40px;
+    background-image: url(/images/Nuestra_empresa.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+#NempresaT{
+    position: relative;
+    color: #ffffff;
+    width: 620px;
+    margin: auto;
+}
+#IempresarialMega{
+    height: 1024px;
+    font-size: 30px;
+    background-image: url(/images/Fondo_blanco_hexagonos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#IempresarialT{
+    position: relative;
+    width: 840px;
+    text-align: center;
+    margin: auto;
+    top: 30%;
+}
+#MEGAT{
+    position: relative;
+    width: 840px;
+    text-align: center;
+    margin: auto;
+    top: 35%;
+}
+#MisionMegaVision{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 1024px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #F8F496;
+}
+.Cuadro{
+    position: relative;
+    top: 25%;
+    background-color: #ffffff;
+    height: max-content;
+    width: 485px;
+    border-radius: 42px;
+    box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.VisionMision{
+    position: relative;
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#TienesPreguntas{
+    background-color: #ffffff;
+    height: 596px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#TienesPreguntasT{
+    margin-left: 4%;
+    position: relative;
+    width: 400px;
+    text-align: left;
+    color: #000F55;
+}
+#TienesPreguntasimg{
+    position: relative;
+    margin-right: 4%;
+    width: 420px;
+    height: 420px;
+}
+#WhatsApp{
+    margin-top: 50px;
+    border: none;
+    border-radius: 34px;
+    background-color: #F8F496;
+    width: 232px;
+    height: 61px;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 54px;
+    color: #000F55;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 18px;
+    color: black;
+}
+p{
+    text-align: center;
+}
+@media screen and (max-width: 1000px){
+    #IempresarialT{
+        position: relative;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        top: 30%;
+    }
+    #MEGAT{
+        position: relative;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        top: 35%;
+    }
+    .VisionMision{
+        width: auto;
+    }
+    .Cuadro{
+        top: 0%;
+        bottom: 0%;
+    }
+    #MisionMegaVision{
+        flex-direction: column;
+        align-items: center;
+        height: 1300px;
+    }
+    #TienesPreguntas{
+        height: 1000px;
+        flex-direction: column-reverse;
+    }
+    #IempresarialT{
+        top: 10%;
+    }
+    #MEGAT{
+        top: 15%
+    }
+}
+@media screen and (max-width: 500px){
+
+    #IempresarialMega{
+        height: max-content;
+    }
+    #MisionMegaVision{
+        flex-direction: row;
+        height: auto;
+    }
+    .Cuadro{
+        margin: 40px;
+        width: auto;
+    }
+    .VisionMision{
+        font-size: 24px;
+        padding: 20px;
+    }
+    #TienesPreguntasimg{
+        width: 350px;
+        height: 350px;
+    }
+    #IempresarialT{
+        top: 10%;
+        padding: 40px;
+        width: auto;
+    }
+    #MEGAT h4{
+        font-size: 20px;
+    }
+    #MEGAT h2{
+        font-size: 40px;
+    }
+    #IempresarialT h4{
+        font-size: 20px;
+    }
+    #IempresarialT h2{
+        font-size: 40px;
+    }
+    #MEGAT{
+        top: 5%;
+        padding: 40px;
+        width: auto;
+    }
+    #TienesPreguntasT{
+        width: auto;
+    }
+    #NempresaT{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

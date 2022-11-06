@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/Navbar.css" />
+  <link rel="stylesheet" href="/css/Boton_whatsapp.css" />
+
+  <!--Fuentes de texto-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+
+
+  <!--Boton de whatsapp-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Tradiciones Bacan</title>
+</head>
+
+<body>
+  <a href="https://api.whatsapp.com/send?phone=+573158503531" class="float" target="-blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <!--Barra de Navegacion-->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg" style="background-color: #ffff">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/images/logo_bacan.png" alt="" width="170" height="80"
+              class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="/index.html"><b>Inicio</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="/html/Sobre_Nosotros.html">Sobre
+                  Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" aria-current="page"
+                  href="/html/Tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="/html/Contacto.html">Contacto</a>
+              </li>
+              <li class="sub-menu nav-item">
+                <a class="nav-menu-link nav-link" href="javascript:void(0);">
+                  <img src="/images/216477_shopping_cart_icon.png" alt="" width="40"
+                    height="a"/>
+                </a>
+                <div id="Carrito">
+                  <h4>Carrito de compras</h4>
+                  <div id="Carrito2">
+                    <div id='CarritoVacio'> 
+                      <img id="CarritoVacioImagen" src="/images/Carrito_Vacio.png" alt="">
+                      <h5><b>Carrito Vacio</b></h5>
+                    </div>
+                  </div>
+                  <p class="total-carrito">Total: </p>
+                  <a href="/html/CheckOut.html" id="CheckOut">Check-Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="CotizacionCarro">
+    <p class="total-carrito-cotizacion">Total: </p>  
+  </div>
+  <div id="ReviveLaTradicion">
+    <img id="Portadaimg" src="/images/Home1.jpeg" alt="" width="784" />
+    <div id="ReviveLaTradicionT">
+      <h1>Abuelitos,</h1>
+      <h1><b>Estamos contigo</b></h1>
+      <p>
+        En Tradiciones SAS tenemos hoy una misión: Apoyar a los abuelitos
+        afectados por la crisis sanitaria. Hemos llevado a sus casas material
+        artesanal para la elaboración de los muñecos años viejos y las maletas
+        de agüeros, ellos se sintieron útiles y colaboraron con la producción
+        en éste año.
+      </p>
+      <button id="boton" onclick="location.href='/html/Tienda.html'" type="button">Compra ahora!</button>
+    </div>
+  </div>
+  <div id="ProductosDestacados">
+    <div id="ProductosDestacadosT1">
+      <h2>Productos <b>Destacados</b></h2>
+    </div>
+    <div id="ProductosDestacadosT">
+      <div class="ProductoD" onclick="location.href='/html/Tienda.html'">
+        <img class="Productoimg" src="/images/Pandemio.jpeg" alt="" width="400"
+          height="auto" />
+        <div class="ProductoT">
+          <h4>Pandemio</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna
+          </p>
+        </div>
+      </div>
+      <div class="ProductoD" onclick="location.href='/html/Tienda.html'">
+        <img class="Productoimg" src="/images/mono_rojo.jpeg" alt="" width="400"
+          height="auto" />
+        <div class="ProductoT">
+          <h4>Bolsa de celofan y moño rojo</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna
+          </p>
+        </div>
+      </div>
+      <div class="ProductoD" onclick="location.href='/html/Tienda.html'">
+        <img class="Productoimg" src="/images/Cenefa_roja.png" alt="" width="400"
+          height="auto" />
+        <div class="ProductoT">
+          <h4>Cenefa roja</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="PreguntasFrecuentes">
+    <img id="Preguntasimg" src="/images/Preguntas2.png" alt="" />
+    <div id="PreguntasFrecuentesT">
+      <h2>Preguntas <b>Frecuentes</b></h2>
+      <h4>¿Por qué quemar el año viejo?</h4>
+      <p>
+        La quema del Muñeco Año Viejo es una tradición que simboliza la
+        renovación en donde las llamas se llevaran lo malo del año actual
+        permitiendo traer los cambios del año venidero.
+      </p>
+      <h4>¿Que contiene el kit muñeco de año viejo Bacán?</h4>
+      <p>
+        Nuestro Kit Muñeco Año Viejo Bacán contiene los siguientes productos:
+      </p>
+      <ul>
+        <li>Muñeco año viejo de 21 cm de alto, 100% artesanal</li>
+        <li>Sombrero de palma</li>
+        <li>Frasco de vidrio con parafina líquida de olor a citronela</li>
+        <li>
+          Tarro metálico litografiado diámetro de 13,5 cm x 7 cm de alto
+        </li>
+        <li>Bolsa de regalo en papel Kraft con manijas en cabuya</li>
+        <li>Tarjeta de regalo impresa en la bolsa</li>
+        <li>Cuadernillo impreso en papel ecológico</li>
+        <li>Lápiz negro</li>
+        <li>Porción de cascarilla</li>
+      </ul>
+      <h4>¿Cuánto cuesta?</h4>
+      <p>
+        Todos nuestros productos contienen su respectivo precio en la imagen
+        promocional o puedes visitar nuestro apartado de tienda donde
+        encontraras su respectivo precio.
+      </p>
+    </div>
+  </div>
+  <div id="NuestrosClientes">
+    <div id="NuestrosClientesTitulo">
+      <h2><b>Nuestros</b> clientes dicen...</h2>
+    </div>
+    <div class="NuestrosClientesT">
+      <div class="Clientes">
+        <img id="ImgCliente1" src="/images/Cliente1.png" alt="" width="180" height="180" />
+        <div class="Cliente">
+          <h4>Adriana Paterninda</h4>
+          <h5>Comentario de Mercado libre</h5>
+          <p>
+            “Atención rápida, muy buen servicio y producto. “Espectacular 100%
+            recomendado, muy bien hechos y de excelente calidad, además el envío
+            super rápido, compraré más”.
+          </p>
+        </div>
+      </div>
+      <div class="Clientes">
+        <img id="ImgCliente2" src="/images/Cliente2.png" alt="" width="180" height="180" />
+        <div class="Cliente">
+          <h4>Alcira Martínez</h4>
+          <h5>Comentario de Mercado libre</h5>
+          <p>
+            “Todo salió muy bien, es una persona muy atenta y correcta. El
+            producto? !PRECIOSO! un detalle muy original para esta época de
+            navidad”.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="NuestrosClientesT">
+      <div class="Clientes">
+        <img id="ImgCliente3" src="/images/Cliente3.png" alt="" width="180" height="180" />
+        <div class="Cliente">
+          <h4>Vanessa Ariza</h4>
+          <h5>Comentario de Mercado libre</h5>
+          <p>
+            “Todo salió muy bien, es una persona muy atenta y correcta. El
+            producto? !PRECIOSO! un detalle muy original para esta época de
+            navidad”.
+          </p>
+        </div>
+      </div>
+      <div class="Clientes">
+        <img id="ImgCliente4" src="/images/Cliente4.png" alt="" width="180" height="180" />
+        <div class="Cliente">
+          <h4>David Arguello</h4>
+          <h5>Comentario de Compra en Línea</h5>
+          <p>
+            “Atención rápida, muy buen servicio y producto. “Espectacular 100%
+            recomendado, muy bien hechos y de excelente calidad, además el envío
+            super rápido, compraré más”.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal Iniciar sesion -->
+  <div class="modal fade" id="SigninModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><a>Ingresar con tu cuenta Bacan</a></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="login-form">
+            <div class="form-group">
+              <input type="email" id="loginemail" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" id="loginpassword" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-block btn-ini">Iniciar sesion</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-white" style="background-color: #000f55">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xl-4 text-reset align-items-center">
+          <p class="Tfooter"><b>Comunicate con Nosotros</b></p>
+          <hr color="white" size="6" width="100%" />
+          <ul class="list-unstyled">
+            <li>
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              (+57) (1) 757 1146
+            </li>
+            <li>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              (+57) 315 8503 531
+            </li>
+            <li>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              (+57) 310 6873 657
+            </li>
+            <li>
+              <ion-icon name="mail-outline"></ion-icon>
+              info@tradicionesbacan.com<br>
+            </li>
+            <!--Gestionar TradicionesBacan-->
+            <li class="administar">Eres emplado Bacan?<br>
+              <a class="Nconexion">No hay conexion con la base de datos</a>
+              <a class="ingresar logged-out" data-bs-toggle="modal" data-bs-target="#SigninModal"
+                style="display: none">Ingresar</a>
+              <a class="gestion logged-in" href="/html/Gestionar.html"
+                style="display:none">Gestionar</a><br>
+              <a class="salir logged-in"  style="display:none">salir</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xl-4 text-reset align-items-center">
+          <p class="Tfooter"><b>¿Donde encontrarnos?</b></p>
+          <hr color="white" size="6" width="100%" />
+          <ul class="list-unstyled">
+            <li>
+              <ion-icon name="location-outline"></ion-icon>
+              <b>Carrera 62 # 168a- 54</b>
+              <p id="peque">OFI 101 Int 6, Bogotá – Colombia</p>
+            </li>
+            <li class="maps">
+              <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15904.402551170488!2d-74.0598461!3d4.7525419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ef56ca55c40d930!2sTradiciones%20SAS!5e0!3m2!1ses!2sco!4v1631421226541!5m2!1ses!2sco"
+                width="300" height="250" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xl-4 text-reset align-items-center">
+          <p class="Tfooter"><b>¡Siguenos en nuestras redes!</b></p>
+          <hr color="white" size="6" width="100%" />
+          <ul class="list-unstyled">
+            <li>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <a class="link_redes" href="https://www.instagram.com/tradicionesbacan/"
+                target="_blank">@tradicionesbacan</a>
+            </li>
+            <li>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <a class="link_redes" href="https://www.facebook.com/tradicionesbacan/" target="_blank">Tradiciones
+                Bacan</a>
+            </li>
+            <li>
+              <ion-icon name="logo-pinterest"></ion-icon>
+              <a class="link_redes" href="https://co.pinterest.com/abermudez8652/_created/" target="_blank">Tradiciones
+                Bacan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <!-- Iconos -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- FIREBASE SCRIPTS-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="/js/config.js"></script>
+
+  <script src="/js/Carrito.js"></script>
+  <script src="/js/sesion.js"></script>
+</body>
+
+</html>
