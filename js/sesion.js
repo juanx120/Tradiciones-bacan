@@ -45,7 +45,7 @@ signinForm.addEventListener('submit', (e) => {
             signinForm.reset();
             //Cerrar Modal
             myModal.hide()
-            window.location.href = "/tradicionesbacan-project/html/Gestionar.html"
+            window.location.href = "/html/Gestionar.html"
         })
         .catch((error) => {
             var errorCode = error.code;
@@ -67,7 +67,7 @@ logout.addEventListener('click', (e) => {
     firebase.auth().signOut().then(() => {
         // Sign-out successful.
         console.log('sign out')
-        window.location.href = "/tradicionesbacan-project/index.html"
+        window.location.href = "/index.html"
     }).catch((error) => {
         // An error happened.
     });
